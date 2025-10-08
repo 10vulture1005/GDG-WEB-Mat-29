@@ -18,8 +18,8 @@ Welcome to our GDG learning repository! This is a collaborative space where we s
 
 4. **Submit your work**
    - Create a new branch with your name
-   - Add your completed assignments
-   - Submit a pull request for review
+   - commit with your rollno and assignment name
+   - Submit a pull request for review(add your rollno)
 
 
 ## 📖 Learning Path
