@@ -12,6 +12,10 @@ function test() {
 
 test();
 console.log(x);
+// answer of question 1
+/* undefined
+   20
+   10 */
 
 // question 2) predict output of this code snippet
 
@@ -29,6 +33,10 @@ function outer() {
 
 outer();
 console.log("3:", x);
+// answer of question 2 
+/* 1: undefined
+   2:10
+   3:5*/
 
 // question 3) predict output 
 
@@ -38,5 +46,13 @@ console.log(typeof undefined);
 console.log(typeof []);
 console.log(typeof {});
 console.log(typeof (() => {}));
+
+// answer to question 3
+/* object
+   nahi ata sorry
+   undefined
+   object
+   object
+   boolean */
 
 
