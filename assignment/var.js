@@ -13,6 +13,9 @@ function test() {
 test();
 console.log(x);
 
+// Answer: undefined(because not global(reach))
+// 20 
+// 10
 // question 2) predict output of this code snippet
 
 let x = 5;
@@ -30,6 +33,9 @@ function outer() {
 outer();
 console.log("3:", x);
 
+// Answer: 1:10
+// 2:10 
+// 3:5
 // question 3) predict output 
 
 console.log(typeof null);
@@ -39,4 +45,9 @@ console.log(typeof []);
 console.log(typeof {});
 console.log(typeof (() => {}));
 
-
+// Answer: object 
+// undefined
+// undefined
+// object
+// object
+// function
