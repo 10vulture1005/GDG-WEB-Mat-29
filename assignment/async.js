@@ -20,6 +20,17 @@ console.log("D");
 
 // 3.Modify the code so that "B" prints before "C" without removing the Promise.
 
+/* output is ->
+   A
+   D
+   C
+   B
+  This came because A and D were normal code so they print before normally
+  but in C and B code had promise and timeout , so compiler skipped them for later
+  B had timeout statement so it printed after whole program ran but because it had
+  0 time value it printed without delay.
+  if we want to print B before C we can use setTimeout for C also , it would be like this 
+  Promise.resolve().then(setTimeout(() => console.log("C") , 00));   */
 
 
 // -------------------------------------------------------------------------------------------------------------
@@ -63,6 +74,12 @@ Promise.resolve().then(() => {
 
 console.log("4: End");
 
+/* output order would be
+   1: Start
+   4:End
+   3:Promise resolved
+   2: Timeout with 0s delay */
+
 
 
 
@@ -102,6 +119,11 @@ function func(n) {
 
 console.log(result);
 
+/* nums is not defined so no func will run .
+   if we take nums as 'a' since defined earlier ,func with n*2 will run because
+   it is defined before console while n*3 is defined after it so for console func is 
+   not updated */
+
 
 
 
@@ -119,3 +141,6 @@ function multi(n, i) {
 const m = [2, 4, 6];
 const ans = process(multi, m);
 console.log(ans);
+
+/* i am not sure but i guess, if array have same indexing like list in python
+   then ans = [0,4,12].  */
